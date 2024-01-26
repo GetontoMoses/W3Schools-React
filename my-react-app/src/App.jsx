@@ -1,10 +1,12 @@
 import React from "react";
 import PropsLookup from "./PropsLookup";
-import Forms from "./Forms";
+
+import Login from "./Login";
 
 export default function App() {
   return (
-    <><Forms/>
+    <>
+      <Login />
       <div>
         <PropsLookup comment="awesome" />{" "}
         {/*I can pass a prop to the component in another component */}
