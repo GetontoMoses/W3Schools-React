@@ -8,6 +8,9 @@ export default function Layout() {
       <div>
         <Link to="contact">Contact</Link>
       </div>
+      <div>
+        <Link to="about">About</Link>
+      </div>
       <Outlet />
     </>
   );
