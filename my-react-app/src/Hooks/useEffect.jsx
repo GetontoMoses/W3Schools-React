@@ -1,12 +1,22 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Timer() {
+  const [count, setCount] = useState(0);
+  const [product, setProduct] = useState(0);
 
-    const [count, setCount] = useState(0);
+  useEffect(() => {
+    setProduct(count * 2);
+  }, [count]);
 
-    useEffect(() => {
-setCount(count+1)
-    },[])
-    return (<>
-   you have rendered {count} times</>)
+  
+
+  function handleClick() {
+    setCount(count + 1);
+  };
+  return (
+    <>
+      count : {count}
+      <button onClick={handleClick}>* </button> 2<p>Calculation: {product}</p>
+    </>
+  );
 }
