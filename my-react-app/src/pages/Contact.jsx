@@ -1,7 +1,9 @@
+import Car from "../Hooks/AnotheruseState";
+
 export default function Contact() {
   return (
-    <>
-      <h1>Contact</h1>
+    <>Register your car here:
+      <Car/>
     </>
   );
 }

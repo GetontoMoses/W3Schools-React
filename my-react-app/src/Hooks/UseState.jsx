@@ -11,7 +11,7 @@ export default function Login () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    return alert( `${value.firstName}`);
+    return alert( `Hey ${value.firstName}`);
   };
 
   return <>
